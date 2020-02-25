@@ -7,7 +7,7 @@
     "icon": "images/logo.png",
     "displayName": "n7-snippets",
     "description": "Provides snippets useful when writing code with Net7 modules.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.42.0"
     },

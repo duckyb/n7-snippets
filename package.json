@@ -1,9 +1,13 @@
 {
     "name": "n7-snippets",
     "publisher": "duckyb",
+    "repository": {
+        "url": "https://github.com/duckyb/n7-snippets"
+    },
+    "icon": "images/logo.png",
     "displayName": "n7-snippets",
     "description": "Provides snippets useful when writing code with Net7 modules.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.42.0"
     },

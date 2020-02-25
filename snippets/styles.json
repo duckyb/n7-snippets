@@ -1,0 +1,13 @@
+{
+  "n7-icon-font": {
+    "prefix": [
+      "n7-icon-font",
+      "nsiconfont",
+      "n7iconfont"
+    ],
+    "body": [
+      "n7-icon-${1|angle-double-up,angle-double-down,angle-double-left,angle-double-right,action-alt-2,action-alt,action,align-left,angle-down,angle-left,angle-right,angle-up,archive,archway,arrow-left,arrow-right,arrows-h,arrows-v,arrows,asterisk,atlas,bell-add,bell-slash,bell,biography-alt,biography,book-alt,book,bookmark,books-alt,books,books1,box-alt,box-open,box,boxes,alt,boxes,building,calendar-alt,calendar-minus,calendar-plus,caldendar,camera-alt,camera-retro,camera,caret-down,caret-left,caret-right,caret-up,chart-bars,chart-line,chart-lines,check-circle,check-circle1,check-double,check-square,check,checked,circle-full,circle,clipboard-check,clone,close-circle,close,code-branch,code-commit,code-merge,code,cog,cogs,columns,compass,compress-alt,copy,cross,dashboard-add,dashboard,download,earth,edit,ellipsis-h,ellipsis-v,enlarge,enlarge2,expand-alt,expand-arrows,expand-wide,expand,external-link-alt,external-link-square-alt,external-link-square,external-link,external,external2,eye-slash,eye,facebook-square,facebook,facsimile,file-csv,file-excel,file-pdf,file-powerpoint,file-word,icon-file,icon-file2,icon-file3,folder-minus,folder-open,folder-plus,folder-times,folder,folders,google-plus-square,google-plus,icon-grid,grip-horizontal,grip-vertical,home,illustration,image,images,inbox-in,inbox-out,info-circle,info-circle1,info-square,info,info1,instagram,iswat,letter-alt,letter,life-ring,lighbulb-slash,lightbulb,linkedin-square,linkedin,list-ol,list-ul,list,list1,lock-alt,lock-open-alt,lock-open,lock,manuscript-alt,manuscript,map-marker-alt,map-marker,map-pin,map,map1,map2,menu,minus-circle,minus,movie,movie2,movie3,muruca,object-group,object-ungroup,page-left,page-right,pen,pencil-alt,percorso,pinterest-square,plus-circle,plus,polygon,redo-alt,redo,redo1,repeat-1,repeat,reply-all,reply,retweet-alt,retweet,scene-alt,scene,search-minus,search-plus,search,search1,share,share2,shrink,shrink2,sphere,th-large,th-list,th,timeline,alt,timeline,times,transcription,trash-alt,trash,tree,icon,twitter-square,twitter,undo-alt,undo,unlink,unlock-alt,unlock,upload,youtube-square,youtube|}$0"
+    ],
+    "description": "Icon font class names"
+  }
+}

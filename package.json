@@ -1,0 +1,41 @@
+{
+    "name": "n7-snippets",
+    "publisher": "duckyb",
+    "displayName": "n7-snippets",
+    "description": "Provides snippets useful when writing code with Net7 modules.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/styles.json"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/styles.json"
+            },
+            {
+                "language": "json",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

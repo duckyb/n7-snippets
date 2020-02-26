@@ -1,58 +1,110 @@
 {
   "font-family": {
-    "prefix": "ff",
-    "body": [
-      "font-family: ${1|$font-family-main;,$font-family-headings;|}$0"
+    "prefix": [
+      "ff",
+      "n7-font-family",
+      "ns-font-family"
     ],
-    "description": "Sets font family from available variables."
+    "body": [
+      "font-family: ${1|$font-family-main,$font-family-headings|};"
+    ],
+    "description": "n7 font-family"
   },
   "font-size": {
-    "prefix": "fs",
-    "body": [
-      "font-size: ${1|$font-size-xxxl;,$font-size-xxl;,$font-size-xl;,$font-size-xl;,$font-size-l;,$font-size-m;,$font-size-s;,$font-size-xs;|}$0"
+    "prefix": [
+      "fs",
+      "n7-font-size",
+      "ns-font-size"
     ],
-    "description": "Sets font size from available variables."
+    "body": [
+      "font-size: ${1|$font-size-xxxl,$font-size-xxl,$font-size-xl,$font-size-xl,$font-size-l,$font-size-m,$font-size-s,$font-size-xs|};"
+    ],
+    "description": "n7 font-size"
   },
   "font-weight": {
-    "prefix": "fw",
-    "body": [
-      "font-weight: ${1|$font-weight-normal;,$font-weight-bold;|}$0"
+    "prefix": [
+      "fw",
+      "n7-font-weight",
+      "ns-font-weight"
     ],
-    "description": "Sets font weight from available variables."
+    "body": [
+      "font-weight: ${1|$font-weight-normal,$font-weight-bold|};"
+    ],
+    "description": "n7 font-weight"
   },
   "margin": {
-    "prefix": "m",
-    "body": [
-      "margin: ${1|$space;,$space $space;,$space $space $space $space;|}$0"
+    "prefix": [
+      "mr",
+      "n7-margin",
+      "ns-margin"
     ],
-    "description": "Sets margin from available variables."
+    "body": [
+      "margin: ${1|$space,$space $space,$space $space $space $space|};"
+    ],
+    "description": "n7 margin"
   },
   "padding": {
-    "prefix": "p",
-    "body": [
-      "padding: ${1|$space;,$space $space;,$space $space $space $space;|}$0"
+    "prefix": [
+      "pd",
+      "n7-padding",
+      "ns-padding"
     ],
-    "description": "Sets padding from available variables."
+    "body": [
+      "padding: ${1|$space;,$space $space;,$space $space $space $space;|}"
+    ],
+    "description": "n7 padding"
   },
   "color": {
-    "prefix": "c",
-    "body": [
-      "color: ${1|$color-text;,$color-text-inverse;,$color-text-light;,$color-text-link;,$color-text-link-hover;|}$0"
+    "prefix": [
+      "cl",
+      "n7-color",
+      "ns-color"
     ],
-    "description": "Sets color from available variables."
+    "body": [
+      "color: ${1|$color-text,$color-text-inverse,$color-text-light,$color-text-link,$color-text-link-hover|};"
+    ],
+    "description": "n7 color"
   },
   "border": {
-    "prefix": "b",
-    "body": [
-      "border: ${1|1px solid $color-border-light;,1px solid $color-border-normal;|}$0"
+    "prefix": [
+      "br",
+      "n7-border",
+      "ns-border"
     ],
-    "description": "Sets border from available variables."
+    "body": [
+      "border: 1px solid ${1|$color-border-light,$color-border-normal|};"
+    ],
+    "description": "n7 border color"
   },
   "background-color": {
-    "prefix": "bc",
-    "body": [
-      "background-color: ${1|$color-background-base;,$color-background-light;,$color-background-medium;,$color-background-dark|}$0"
+    "prefix": [
+      "bc",
+      "n7-background-color",
+      "ns-background-color"
     ],
-    "description": "Sets background color from available variables."
+    "body": [
+      "background-color: ${1|$color-background-base,$color-background-light,$color-background-medium,$color-background-dark|};"
+    ],
+    "description": "n7 background-color"
+  },
+  "vars-colors": {
+    "prefix": [
+      "n7-var-color",
+      "ns-var-color"
+    ],
+    "body": [
+      "\\$color-${1|border,background,text|}-${2|base,normal,light,medium,dark,inverse,link,hover|}"
+    ],
+    "description": "n7 color variables"
+  },
+  "vars-fonts": {
+    "prefix": [
+      "n7-var-fonts",
+      "ns-var-fonts"
+    ],
+    "body": [
+      "\\$font-${1|size,family|}-${2|main,headings,xxxl,xxl,xl,l,m,s,xs|}"
+    ],
+    "description": "n7 font variables"
   }
 }

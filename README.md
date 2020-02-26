@@ -4,23 +4,37 @@ This extension includes some snippets that might be useful when working with Net
 
 ## Features
 
-List of included snippets:
-1. `n7-icon-font`: Type this keyword to access all of the icon font's class names.
+| Prefix | Description | Scope |
+| --- | --- | --- |
+| `n7-icon-font` | Access all of the icon font's class names | Typescript, JSON, HTML, Javascript |
+| `n7-font-family` | Add this attribute with an embedded variable | SCSS, CSS |
+| `n7-font-size` | Add this attribute with an embedded variable | SCSS, CSS |
+| `n7-font-weight` | Add this attribute with an embedded variable | SCSS, CSS |
+| `n7-margin` | Add this attribute with an embedded variable | SCSS, CSS |
+| `n7-padding` | Add this attribute with an embedded variable | SCSS, CSS |
+| `n7-color` | Add this attribute with an embedded variable | SCSS, CSS |
+| `n7-border` | Add this attribute with an embedded variable | SCSS, CSS |
+| `n7-background-color` | Add this attribute with an embedded variable | SCSS, CSS |
+| `n7-var-color` | Composes the variable name for colors | SCSS, CSS |
+| `n7-var-fonts` | Composes the variable name for fonts | SCSS, CSS |
 
-> Tip: all trigger words have a shorter alias, for example n7-icon-font can also be accessed with the keyword "nsiconfont" for faster coding!
+## Advanced Tips
 
-Currently supported file types:
-+ Typescript
-+ Javascript
-+ Json
-+ Css
-+ Scss
-+ HTML
+1. Every prefix has a numberless equivalent. Tired of typing "n7-icon-font"? Just use "ns-icon-font" instead!
+2. You don't need to type every character of the prefix, typing `nsbgcol` will find the "`ns`-`b`ack`g`round-`col`or" snippet!
+3. Type `n7` to see all the available snippets for the file you're working on
+
+## Preview
 
 ![](https://i.imgur.com/tUEa4ph.gif)
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.5
+
+Added css/scss attribute snippets with embedded variable names.
+Added snippets for scss variables names
+
+### 0.0.1
 
 Initial release of n7-snippets

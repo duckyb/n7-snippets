@@ -32,9 +32,13 @@ This extension includes some snippets that might be useful when working with Net
 
 ## Release Notes
 
+### 0.0.8
+
+Auto-detect file title in header comments
+
 ### 0.0.7
 
-My name is Bond, James Bond.
+My name is Bond, James Bond.  
 Added snippet for css header-like comments
 
 ### 0.0.6

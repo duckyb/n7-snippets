@@ -23,6 +23,7 @@ This extension includes some snippets that might be useful when working with Net
 1. Every prefix has a numberless equivalent. Tired of typing "n7-icon-font"? Just use "ns-icon-font" instead!
 2. You don't need to type every character of the prefix, typing `nsbgcol` will find the "`ns`-`b`ack`g`round-`col`or" snippet!
 3. Type `n7` to see all the available snippets for the file you're working on
+4. Snippets not appearing? Use *"ctrl/cmd" + "space"* to summon them.
 
 ## Preview
 

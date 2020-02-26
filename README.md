@@ -30,10 +30,18 @@ This extension includes some snippets that might be useful when working with Net
 
 ## Release Notes
 
+### 0.0.6
+
+Updates to the readme file
+
 ### 0.0.5
 
 Added css/scss attribute snippets with embedded variable names.
 Added snippets for scss variables names
+
+### 0.0.2 - 0.0.4
+
+Updates to the extension's icon
 
 ### 0.0.1
 

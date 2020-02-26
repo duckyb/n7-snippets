@@ -7,6 +7,7 @@ This extension includes some snippets that might be useful when working with Net
 | Prefix | Description | Scope |
 | --- | --- | --- |
 | `n7-icon-font` | Access all of the icon font's class names | Typescript, JSON, HTML, Javascript |
+| `n7-comment-header` | Insert a multiline header-comment | SCSS, CSS |
 | `n7-font-family` | Add this attribute with an embedded variable | SCSS, CSS |
 | `n7-font-size` | Add this attribute with an embedded variable | SCSS, CSS |
 | `n7-font-weight` | Add this attribute with an embedded variable | SCSS, CSS |
@@ -30,6 +31,11 @@ This extension includes some snippets that might be useful when working with Net
 ![](https://i.imgur.com/tUEa4ph.gif)
 
 ## Release Notes
+
+### 0.0.7
+
+My name is Bond, James Bond.
+Added snippet for css header-like comments
 
 ### 0.0.6
 

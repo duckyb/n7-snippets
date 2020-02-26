@@ -1,4 +1,17 @@
 {
+  "comment-header": {
+    "prefix": [
+      "n7-comment-header",
+      "ns-comment-header"
+    ],
+    "body": [
+      "/* ------------------------------------ *\\",
+      "   #${1:${TM_FILENAME_BASE:TITLE}}",
+      "\\* ------------------------------------ */",
+      "$0"
+    ],
+    "description": "n7 comment header"
+  },
   "font-family": {
     "prefix": [
       "ff",

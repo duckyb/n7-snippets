@@ -33,6 +33,11 @@ This extension includes some snippets that might be useful when working with Net
 
 ## Release Notes
 
+### 0.0.9
+
+Added span with icon class name  
+Updated extension display name
+
 ### 0.0.8
 
 Auto-detect file title in header comments

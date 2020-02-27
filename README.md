@@ -4,21 +4,26 @@ This extension includes some snippets that might be useful when working with Net
 
 ## Features
 
-| Prefix | Description | Scope |
-| --- | --- | --- |
-| `n7-icon-font` | Access all of the icon font's class names | Typescript, JSON, HTML, Javascript |
-| `n7-span-icon` | Create a span with an icon class name | HTML |
-| `n7-comment-header` | Insert a multiline header-comment | SCSS, CSS |
-| `n7-font-family` | Add this attribute with an embedded variable | SCSS, CSS |
-| `n7-font-size` | Add this attribute with an embedded variable | SCSS, CSS |
-| `n7-font-weight` | Add this attribute with an embedded variable | SCSS, CSS |
-| `n7-margin` | Add this attribute with an embedded variable | SCSS, CSS |
-| `n7-padding` | Add this attribute with an embedded variable | SCSS, CSS |
-| `n7-color` | Add this attribute with an embedded variable | SCSS, CSS |
-| `n7-border` | Add this attribute with an embedded variable | SCSS, CSS |
-| `n7-background-color` | Add this attribute with an embedded variable | SCSS, CSS |
-| `n7-var-color` | Composes the variable name for colors | SCSS, CSS |
-| `n7-var-fonts` | Composes the variable name for fonts | SCSS, CSS |
+|          Prefix           |                  Description                  |                Scope                |
+|            ---            |                      ---                      |                 ---                 |
+| `n7-icon-font`            | Access all of the icon font's class names     | Typescript, JSON, HTML, Javascript  |
+| `n7-layout-config`        | Template for a layout's config                | Typescript                          |
+| `n7-layout-datasource`    | Template for a layout's datasource            | Typescript                          |
+| `n7-layout-eventhandler`  | Template for a layout's eventhandler          | Typescript                          |
+| `n7-layout-ts-component`  | Template for a layout's angular component     | Typescript                          |
+| `n7-layout-template`      | Template for a layout's HTML                  | HTML                                |
+| `n7-span-icon`            | Create a span with an icon class name         | HTML                                |
+| `n7-comment-header`       | Insert a multiline header-comment             | SCSS, CSS                           |
+| `n7-font-family`          | Add this attribute with an embedded variable  | SCSS, CSS                           |
+| `n7-font-size`            | Add this attribute with an embedded variable  | SCSS, CSS                           |
+| `n7-font-weight`          | Add this attribute with an embedded variable  | SCSS, CSS                           |
+| `n7-margin`               | Add this attribute with an embedded variable  | SCSS, CSS                           |
+| `n7-padding`              | Add this attribute with an embedded variable  | SCSS, CSS                           |
+| `n7-color`                | Add this attribute with an embedded variable  | SCSS, CSS                           |
+| `n7-border`               | Add this attribute with an embedded variable  | SCSS, CSS                           |
+| `n7-background-color`     | Add this attribute with an embedded variable  | SCSS, CSS                           |
+| `n7-var-color`            | Composes the variable name for colors         | SCSS, CSS                           |
+| `n7-var-fonts`            | Composes the variable name for fonts          | SCSS, CSS                           |
 
 ## Advanced Tips
 
@@ -29,37 +34,4 @@ This extension includes some snippets that might be useful when working with Net
 
 ## Preview
 
-![](https://i.imgur.com/tUEa4ph.gif)
-
-## Release Notes
-
-### 0.0.9
-
-Added span with icon class name  
-Updated extension display name
-
-### 0.0.8
-
-Auto-detect file title in header comments
-
-### 0.0.7
-
-My name is Bond, James Bond.  
-Added snippet for css header-like comments
-
-### 0.0.6
-
-Updates to the readme file
-
-### 0.0.5
-
-Added css/scss attribute snippets with embedded variable names.
-Added snippets for scss variables names
-
-### 0.0.2 - 0.0.4
-
-Updates to the extension's icon
-
-### 0.0.1
-
-Initial release of n7-snippets
+![preview](https://i.imgur.com/tUEa4ph.gif)

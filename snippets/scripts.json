@@ -8,5 +8,134 @@
       "n7-icon-${1|action,action-alt,action-alt-2,align-left,angle-double-down,angle-double-left,angle-double-right,angle-double-up,angle-down,angle-left,angle-right,angle-up,archive,archway,arrow-alt-from-bottom,arrow-alt-from-left,arrow-alt-from-right,arrow-alt-from-top,arrow-left,arrow-right,arrows,arrows-h,arrows-v,asterisk,atlas,bell,bell-add,bell-slash,biography,biography-alt,book,book-alt,bookmark,books,books-alt,books1,box,box-alt,box-open,boxes,boxes-alt,building,calendar,calendar-alt,calendar-minus,calendar-plus,camera,camera-alt,camera-retro,caret-down,caret-left,caret-right,caret-up,chart-bars,chart-line,chart-lines,check,check-circle,check-circle1,check-double,check-square,checked,circle,circle-full,clipboard-check,clock,clone,close,close-circle,code,code-branch,code-commit,code-merge,cog,cogs,columns,compass,compress-alt,copy,cross,dashboard,dashboard-add,download,download-2,earth,edit,ellipsis-h,ellipsis-v,enlarge,enlarge2,exclamation,exclamation-circle,exclamation-square,exclamation-triangle,expand,expand-alt,expand-arrows,expand-wide,external,external-link,external-link-alt,external-link-square,external-link-square-alt,external2,eye,eye-slash,facebook,facebook-square,facsimile,fan,file,file-csv,file-excel,file-pdf,file-powerpoint,file-word,file2,file3,folder,folder-minus,folder-open,folder-plus,folder-times,folders,google-plus,google-plus-square,grid,grip-horizontal,grip-vertical,home,illustration,image,images,inbox-in,inbox-out,info,info-circle,info-circle1,info-square,info1,instagram,iswat,letter,letter-alt,life-ring,lightbulb,lightbulb-slash,linkedin,linkedin-square,list,list-ol,list-ul,list1,lock,lock-alt,lock-open,lock-open-alt,manuscript,manuscript-alt,map,map-marker,map-marker-alt,map-pin,map1,map2,menu,minus,minus-circle,movie,movie2,movie3,muruca,object-group,object-ungroup,page-left,page-right,pen,pencil-alt,percorso,pinterest-square,plus,plus-circle,polygon,power,print,redo,redo-alt,redo1,repeat,repeat-1,reply,reply-all,retweet,retweet-alt,scene,scene-alt,search,search-minus,search-plus,search1,share,share2,shrink,shrink2,sphere,th,th-large,th-list,thermometer-empty,thermometer-full,thermometer-half,thermometer-quarter,thermometer-three-quarters,timeline,timeline-alt,times,transcription,trash,trash-alt,tree-icon,twitter,twitter-square,undo,undo-alt,unlink,unlock,unlock-alt,upload,user,user-friends,users,youtube,youtube-square|}$0"
     ],
     "description": "Icon font class names"
+  },
+  "n7-layout-config": {
+    "prefix": [
+      "n7-layout-config",
+      "ns-layout-config"
+    ],
+    "body": [
+      "import { ${1:N7}${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}DS } from './${TM_FILENAME_BASE/(.*)\\..*/${1}/gi}.ds';",
+      "import { ${1:N7}${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}EH } from './${TM_FILENAME_BASE/(.*)\\..*/${1}/gi}.eh';",
+      "import * as DS from '../../data-sources';",
+      "import * as EH from '../../event-handlers';",
+      "",
+      "export const ${1:N7}${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}Config = {",
+      "  layoutId: '${2:n7}-${TM_FILENAME_BASE/(.*)\\..*/${1}/gi}',",
+      "  widgets: [",
+      "    // {", 
+      "    //   id: 'title',          ← Insert a component here.",
+      "    //   hasStaticData: true,  ← Renders the widget before this.one().update is called.",
+      "    // }",
+      "  ],",
+      "  layoutDS: ${1:N7}${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}DS,",
+      "  layoutEH: ${1:N7}${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}EH,",
+      "  widgetsDataSources: DS,",
+      "  widgetsEventHandlers: EH,",
+      "  layoutOptions: {}",
+      "};"
+    ],
+    "description": "Template layout configuration"
+  },
+  "n7-layout-datasource": {
+    "prefix": [
+      "n7-layout-datasource",
+      "ns-layout-datasource"
+    ],
+    "body": [
+      "import { LayoutDataSource } from '@n7-frontend/core';",
+      "",
+      "export class ${1:N7}${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}DS extends LayoutDataSource {",
+      "",
+      "  private communication;",
+      "",
+      "  onInit(payload) {",
+      "    this.communication = payload.communication;",
+      "    /**",
+      "     * Example query & Component Update",
+      "     */",
+      "     // this.communication.request$('getCompany', {",
+      "     //   onError: (error) => console.error(error)",
+      "     // }).subscribe(data => {",
+      "     //   console.log('-----------: ${1:N7}${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}DS -> onInit -> data', data);",
+      "     //   this.one('title').update(data.company_basic_info);",
+      "     // });",
+      "  }",
+      "}"
+    ],
+    "description": "Template layout datasource"
+  },
+  "n7-layout-eventhandler": {
+    "prefix": [
+      "n7-layout-eventhandler",
+      "ns-layout-eventhandler"
+    ],
+    "body": [
+      "import { EventHandler } from '@n7-frontend/core';",
+      "",
+      "export class ${1:N7}${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}EH extends EventHandler {",
+      "",
+      "  public listen() {",
+      "    this.innerEvents$.subscribe(({ type, payload }) => {",
+      "      switch (type) {",
+      "",
+      "        case '${2:n7}-${TM_FILENAME_BASE/(.*)\\..*/${1}/gi}.init':",
+      "          this.dataSource.onInit(payload);",
+      "          break;",
+      "",
+      "        default:",
+      "          console.warn('unhandled inner event of type', type)",
+      "          break;",
+      "      }",
+      "    });",
+      "",
+      "    /*",
+      "      this.outerEvents$.subscribe(({ type, payload }) => {",
+      "      });",
+      "    */",
+      "  }",
+      "",
+      "}"
+    ],
+    "description": "Template layout eventhandler"
+  },
+  "n7-layout-ts-component": {
+    "prefix": [
+      "n7-layout-ts-component",
+      "ns-layout-ts-component"
+    ],
+    "body": [
+      "import { Component, OnInit, OnDestroy } from '@angular/core';",
+      "import { AbstractLayout, CommunicationService } from '@n7-frontend/boilerplate';",
+      "import { ${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}Config as config } from './${TM_FILENAME_BASE/(.*)\\..*/${1}/gi}.config';",
+      "",
+      "@Component({",
+      "  selector: '${2:n7}-${TM_FILENAME_BASE/(.*)\\..*/${1}/gi}',",
+      "  templateUrl: './${TM_FILENAME_BASE/(.*)\\..*/${1}/gi}.html'",
+      "})",
+      "export class ${TM_FILENAME_BASE/(\\w*)-(\\w*)\\..*/${1:/capitalize}${2:/capitalize}/gi}Component extends AbstractLayout implements OnInit, OnDestroy {",
+      "  constructor(",
+      "    private communication: CommunicationService",
+      "  ) {",
+      "    super(config);",
+      "  }",
+      "",
+      "  protected initPayload() {",
+      "    return {",
+      "      communication: this.communication",
+      "    }",
+      "  }",
+      "",
+      "  ngOnInit() {",
+      "    this.onInit();",
+      "  }",
+      "",
+      "  ngOnDestroy() {",
+      "    this.onDestroy();",
+      "  }",
+      "",
+      "}"
+    ],
+    "description": "Template layout angular component"
   }
 }

@@ -18,11 +18,19 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/scripts.json"
             },
             {
                 "language": "typescript",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/scripts.json"
+            },
+            {
+                "language": "json",
+                "path": "./snippets/scripts.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
             },
             {
                 "language": "scss",
@@ -31,14 +39,6 @@
             {
                 "language": "css",
                 "path": "./snippets/styles.json"
-            },
-            {
-                "language": "json",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/snippets.json"
             }
         ]
     }

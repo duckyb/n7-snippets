@@ -7,6 +7,7 @@ This extension includes some snippets that might be useful when working with Net
 | Prefix | Description | Scope |
 | --- | --- | --- |
 | `n7-icon-font` | Access all of the icon font's class names | Typescript, JSON, HTML, Javascript |
+| `n7-span-icon` | Create a span with an icon class name | HTML |
 | `n7-comment-header` | Insert a multiline header-comment | SCSS, CSS |
 | `n7-font-family` | Add this attribute with an embedded variable | SCSS, CSS |
 | `n7-font-size` | Add this attribute with an embedded variable | SCSS, CSS |

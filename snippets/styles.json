@@ -30,7 +30,7 @@
       "ns-font-size"
     ],
     "body": [
-      "font-size: ${1|$font-size-xxxl,$font-size-xxl,$font-size-xl,$font-size-xl,$font-size-l,$font-size-m,$font-size-s,$font-size-xs|};"
+      "font-size: ${1|$font-size-xxxl,$font-size-xxl,$font-size-xl,$font-size-l,$font-size-m,$font-size-s,$font-size-xs|};"
     ],
     "description": "n7 font-size"
   },
@@ -41,7 +41,7 @@
       "ns-font-weight"
     ],
     "body": [
-      "font-weight: ${1|$font-weight-normal,$font-weight-bold|};"
+      "font-weight: ${1|$font-weight-normal,$font-weight-medium,$font-weight-bold,$font-weight-black|};"
     ],
     "description": "n7 font-weight"
   },
